@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>Final Project</title>
+    </head>
+    <body onload="main()">
+        <canvas id="webgl" width = "800" height = "800">
+            Please use a browser that support "canvas"
+        </canvas>
+        <script src="cuon-matrix.js"></script>
+        <script src="WebGL.js"></script>
+        <br>
+        <select name="menu" id="menu">
+            <option value="first">First Person View</option>
+            <option value="third">Third Person View</option>
+        </select>
+        <div>
+            Required User Interaction:<br>
+            1.可以按f鍵前進、w鍵後退<br>
+            2.可以用滑鼠拖曳視角<br>
+            3.可以在第一人稱、第三人稱之間切換<p>
+
+            Technical Requirements:<br>
+            1.有打光所以能清楚的看到反光<br>
+            2.有外觀完整的史帝夫<br>
+            3.有精美的cubemap當作背景<br>
+            4.有設計2個3D物件會永遠繞著中心的圓球轉<br>
+            5.有一段詳細的文字介紹這個作品<p>
+
+            Options:<br>
+            用了cube map reflection和dynamic reflection這兩個function<br>
+        </div>
+    </body>
+    <style>
+        div{
+            font-size: 25px;
+        }
+        select{
+            font-size: 25px;
+        }
+    </style>
+</html>
