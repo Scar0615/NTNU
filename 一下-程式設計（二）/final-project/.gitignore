@@ -1,0 +1,15 @@
+# 編譯產物
+take6
+arena
+bench_multi
+test_engine
+test_game
+*.o
+*.dSYM/
+
+# 系統檔
+.DS_Store
+
+# 老師發的課程教材,不放進公開 repo
+project.pdf
+contest.c
