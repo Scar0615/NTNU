@@ -1,26 +1,38 @@
-# 說明
-這邊放的是我在大學時修過的課中寫過較大型的作業、project
+# 大學課程作品集
 
-## Git筆記
-以下是我爬了各個git使用教學之後所整理出的筆記：
+國立臺灣師範大學(NTNU)資訊工程學系。這裡收錄我在大學期間較完整的課程作業與專題,涵蓋 C 語言、資料結構、電腦圖學、機器學習、遊戲開發與系統程式。
 
-### 新增檔案/資料夾
-要上傳到git之前，最好先將要新增的檔案移到和.git一樣的目錄，這樣子到時候上傳，目錄看起來比較整齊。
+## 精選作品
 
-1. 打開「CMD」或「終端機」輸入`git add (檔案名稱)`  
-(檔案名稱)：可以是一個檔案的名稱，或是一個資料夾的名稱。如果是資料夾的話，這樣上傳後會是整個資料夾的東西都會上傳。
+| 作品 | 做了什麼 | 技術 |
+|---|---|---|
+| [**腳底壓力辨識與機器學習**](大學畢業專題)<br>大學畢業專題 | 用 40 個感測器的腳底壓力資料辨識 15 位受試者,比較 SVM、隨機森林、Gradient Boosting、kNN、XGBoost 五種演算法的準確度與訓練時間,並加入重心、腳掌長寬等特徵。XGBoost 準確度達 100%,訓練時間約為 Gradient Boosting 的 1/12。完整內容見[專題報告](大學畢業專題/專題期末報告.pdf) | Python、scikit-learn、XGBoost |
+| [**Take 6!(誰是牛頭王)**](一下-程式設計（二）/final-project)<br>程式設計（二）期末專題 | 用 C 語言完整實作的終端機桌遊,真人可對 1 到 9 個電腦玩家。電腦有兩種難度,難度 2 會記牌並計算期望罰分,對上隨機出牌的勝率約 64%。規則、AI、介面分成獨立模組,附測試與 AI 對戰程式 | C、Makefile |
+| [**WebGL 3D 場景**](二上-計算機圖學/Final)<br>計算機圖學期末專題 | 可用鍵盤與滑鼠操控角色的 3D 場景:第一人稱與第三人稱切換、打光與高光反射、天空盒背景、環繞運動的 3D 物件,並實作 cube map reflection 與 dynamic reflection | JavaScript、WebGL |
+| [**彈幕射擊遊戲**](四上-遊戲程式設計/final_project)<br>遊戲程式設計期末專題 | 分組製作的像素風射擊遊戲,玩家操控飛機躲避彈幕,Boss 分成多個階段。我與另一位同學負責程式 | Processing |
+| [**用神經網路學乘法**](三上-Python程式設計與人工智慧/專題)<br>Python 與人工智慧期末專題 | 把九九乘法表轉成二進位 tensor 訓練多層感知器(MLP),再結合直式乘法的概念,讓模型算出任意位數的乘法 | Python、ANN |
 
-2. 接著輸入`git commit -m "版本訊息"`  
-"版本訊息"：這個是自訂的，上傳之後版本訊息會出現在目錄和更新時間的中間。
+## 依學期瀏覽
 
-3. 最後輸入`git push origin main`  
-不過我蠻常遇到push被拒絕的狀況，還好這個repository是給我自己用的，所以我可以每次都強制push。  
-方法參考：https://gitbook.tw/chapters/github/fail-to-push
+| 學期 | 課程 | 內容 | 技術 |
+|---|---|---|---|
+| 大一上 | [程式設計（一）](一上-程式設計（一）) | 每次作業約 5 題小程式,附 Makefile 與 readme;從基礎語法到模組化、函式指標 | C |
+| 大一下 | [程式設計（二）](一下-程式設計（二）) | 檔案與二進位格式(BMP、JPG)、命令列工具(AWK、Base64)、動態記憶體;期末專題 Take 6! | C、Makefile |
+| 大二上 | [資料結構](二上-Data%20Structure) | 矩陣運算、運算式處理、二元搜尋樹、圖形問題 | C |
+| 大二上 | [計算機圖學](二上-計算機圖學) | WebGL:3D 模型載入、貼圖、光照、cube map,以及期末 3D 場景 | JavaScript、WebGL |
+| 大三上 | [Python 程式設計與人工智慧](三上-Python程式設計與人工智慧) | 9 次作業(ANN 加法、OpenCV 影像處理、jieba 中文斷詞等),以及兩個專題:Dcard 文章分析(爬蟲)、ANN 乘法器 | Python、OpenCV |
+| 大三上 | [資料探勘](三上-資料探勘) | Titanic 生存分析(Kaggle)、用股市資料預測收盤價(線性迴歸與隨機森林)、scikit-learn 練習 | Python、pandas、scikit-learn |
+| 大三上 | [系統程式](三上-系統程式) | SIC/XE 組譯器:解析組合語言原始碼並產生 symbol table | Python |
+| 大四上 | [數值方法](四上-數值方法) | 每週實作課堂上的數值方法(14 份作業),期中期末考用自己的程式碼計算 | Python、NumPy |
+| 大四上 | [遊戲程式設計](四上-遊戲程式設計) | 向量繪圖、圖片動畫、音樂播放器、多物件碰撞偵測、成績上傳,以及分組期末專題 | Processing |
+| 專題 | [大學畢業專題](大學畢業專題) | 腳底壓力辨識與機器學習,見上方精選作品 | Python、scikit-learn、XGBoost |
 
-### 刪除資料夾
-若是想要在遠端倉庫刪除特定資料夾，則：
+## 技術一覽
 
-1. `git rm -r --cached FOLDER_NAME` ：在cache中指定你要刪除的資料夾名稱
-2. `git commit -m "YOUR_COMMENT"`：YOUR_COMMENT就是那個資料夾的版本訊息
-3. `git push -u origin main`：推上倉庫
-第三步我也是一樣用git push -f給它強制推
+- **程式語言:** C(含 Makefile、單元測試)、Python、JavaScript(WebGL)、Processing
+- **資料與機器學習:** pandas、NumPy、scikit-learn、XGBoost、多層感知器(MLP)、OpenCV
+- **工具:** Git、Makefile、Jupyter Notebook
+
+## 其他
+
+- [Git 筆記](notes/git-notes.md):我整理的 Git 使用筆記
