@@ -1,3 +1,5 @@
+import os
+
 ad = ['START','END','BASE'] # 這裡是不會影響address的assembler directive
 tb = ['CLEAR','COMPR','TIXR'] # two-byte
 
@@ -19,7 +21,7 @@ def decToHex(num):
     
     return value
 
-txtLocation = '/Users/erichsieh/Desktop/NTNU/三上/系統程式/fpf/40847016S/fp.txt' # fp.txt檔所在的絕對路徑
+txtLocation = os.path.join(os.path.dirname(os.path.abspath(__file__)),'fp.txt') # fp.txt與fp.py放在同一個資料夾
 with open(txtLocation,'r',encoding='ascii',errors='ignore') as fp:
     txt = fp.readlines() # 獲得所有文字
     symtab = {}
