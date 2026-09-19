@@ -1,12 +1,16 @@
+import os
 import numpy as np
 import pandas as pd
 import warnings
 from sklearn.ensemble import RandomForestClassifier
 
+# 資料集放在 ../Datasets/
+DATA = os.path.join(os.path.dirname(os.path.abspath(__file__)), '..', 'Datasets')
+
 # 讀入資料
-train = pd.read_csv('/Users/erichsieh/Desktop/NTNU/三上/資料探勘/V_40847016S/titanic/train.csv')
-test = pd.read_csv('/Users/erichsieh/Desktop/NTNU/三上/資料探勘/V_40847016S/titanic/test.csv')
-gender = pd.read_csv('/Users/erichsieh/Desktop/NTNU/三上/資料探勘/V_40847016S/titanic/gender_submission.csv')
+train = pd.read_csv(os.path.join(DATA, 'train.csv'))
+test = pd.read_csv(os.path.join(DATA, 'test.csv'))
+gender = pd.read_csv(os.path.join(DATA, 'gender_submission.csv'))
 
 dfTrain = pd.DataFrame(train)
 dfTest = pd.DataFrame(test)

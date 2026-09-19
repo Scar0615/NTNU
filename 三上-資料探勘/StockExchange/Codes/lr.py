@@ -30,8 +30,8 @@ with open('indexTW.csv') as csvfile:
     target = []
     data =[]
     for a in row:
-        target.append(a[5]) # Close
-        data.append(a[3:5]) # High,Low
+        target.append(float(a[5])) # Close
+        data.append([float(a[3]), float(a[4])]) # High,Low
     
     leng = len(data)
     
